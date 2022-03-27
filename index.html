@@ -4,11 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css" >
     <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css" >
+    <!-- CDN Link for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
+    <!-- Start Quiz Button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Coding Quiz Challenge</span>
+        </div>
+        <div class="info_list">
+            <div class="info">Try to answer the following code-related questions within the time limit.</div>
+            <div class="info">Keep in mind that incorrect answers will penalize your score/time</div>
+            <div class="info">by ten seconds!</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quix Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Coding Quiz</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- <span>String values must be enclosed with _______ when being assigned to variables.</span> -->
+            </div>
+            <div class="option_list">
+               <!-- <div class="option">
+                    <span>Nothing</span>
+                    <div class="icon tick"><i class="fas fa_check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Curly Brackets</span>
+                    <div class="icon cross"><i class="fas fa_times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Quotes</span>
+                </div>
+                <div class="option">
+                    <span>Parentheses</span>
+                </div> -->
+            </div>
+        </section>
+
+<!-- Quiz Box Footer -->
+    <footer>
+        <div class="total_que">
+            <span><p>2</p>of<p>5</p>Questions</span>
+        </div>
+        <button class="next_btn">Next Que</button>
+    </footer>
+
+    </div>
     
+   <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa_crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz! </div>
+        <div class="score_text">
+            <span>and sorry, You got only <p>2</p> out of <p>5</p></span>
+        </div>
+    <div class="buttons">
+        <button class="restart">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+    </div>    
+    </div>
+        
+    <script src="assets/questions.js"></script>
     <script src="./assets/script.js"></script>
+  
+
+
 </body>
 </html>
