@@ -7,8 +7,9 @@ This challenge consisted of building a timed coding quiz with multiple choice qu
 ## Built With
 -HTML, CSS, JavaScript
 
-Link to GitHub Repository:
+Link to GitHub Repository: https://github.com/JHam94/code-quiz-challenge
 
-Link to Deployed Application:
+Link to Deployed Application: https://jham94.github.io/code-quiz-challenge/
+
 
 
