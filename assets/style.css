@@ -4,6 +4,20 @@ body {
     background: white;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 85%;
+}
+
+header h4 {
+    padding-left: 20px;
+    font-size: 2.0rem;
+    display: inline;
+}
+
+
 .start_btn, .info_box, .quiz_box, .result_box {
     position: absolute;
     top: 50%;
@@ -15,7 +29,8 @@ body {
 }
 
 .info_box.activeInfo,
-.quiz_box.activeQuiz{
+.quiz_box.activeQuiz,
+.result_box.activeResult{
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -169,6 +184,15 @@ body {
     user-select: none;
 }
 
+.quiz_box header .time_line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: purple;
+
+}
+
 .quiz_box .section {
     padding: 25px 30px 20px 30px;
     background: white;
@@ -227,8 +251,24 @@ section .option_list .option:hover {
 
 .option_list .option .icon_cross {
     color: red;
-    border-color: white;
-    background: red;
+    background: white;
+    border-color: red; 
+}
+
+.option_list .option.correct{
+    color: green;
+    background: white;
+    border-color: green; 
+}
+
+.option_list .option.incorrect{
+    color: red;
+    background: white;
+    border-color: red; 
+}
+
+.option_list .option.disabled{
+    pointer-events: none;
 }
 
 .quiz_box footer {
@@ -255,6 +295,7 @@ footer .total_que span p {
 }
 
 footer .next_btn {
+    display: none;
     height: 40px;
     margin: auto;
     padding: 0 13px;
